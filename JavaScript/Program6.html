@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- create a form which takes user input to decide what element should be created, 
+     content to be added and styling to be given -->
+     <form>
+        <div>
+        <label for="element">Element Type:</label>
+        <input type="text" id="element" name="element"/> 
+    </div>
+        <!-- id and name should be same for input -->
+    <div>
+         <label for="content">Content</label>
+         <input type="text" id="content" name="content"/>
+        </div>
+    <div>
+         <label for="bgColor">BackgroundColor</label>
+         <input type="text" id="bgColor" name="bgColor"/>
+        </div>
+    <div>
+         <label for="fontColor">Font Color</label>
+         <input type="text" id="fontColor" name="fontColor"/>
+        </div>
+    <div>
+         <label for="fontSize">Font Size</label>
+         <input type="text" id="fontSize" name="fontSize"/>
+        </div>
+    <div>
+         <button type="submit" onclick="handleSubmit()">Create Element</button>
+        </div>
+     </form>
+     <script>
+        function handleSubmit(){
+        let elementType=document.getElementById("element").value;
+        let content=document.getElementById("content").value;
+        let bgColor=document.getElementById("bgColor").value;
+        let fontColor=document.getElementById("fontColor").value;
+        let fontSize=document.getElementById("fontSize").value;
+
+        // create element accordingly
+        let ele= document.createElement(elementType);
+        ele.innerHTML = content;
+        ele.style.backgroundColor=bgColor;
+        ele.style.color=fontColor;
+        ele.style.fontSize=fontSize+"px";
+        document.body.appendChild(ele);
+        event.preventDefault();
+        }
+     </script>
+</body>
+</html>

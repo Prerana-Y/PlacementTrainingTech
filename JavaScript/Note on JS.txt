@@ -1,0 +1,78 @@
+- javascript is a client side programming language.
+- it helps the browsers to understand user inputs and outputs.
+- every browser is able to execute JS bcz they have JS engines installed in them.
+- JS engine is an engine which converts JS code into machine code(binary lang)
+- some popular JS engines:
+Chrome--> V8 engine
+Firefox--->Spidermonkey
+Safari--->JS core
+
+------------------------------------------------------------------------------------
+Variables is JS
+---------------
+-> they are used to store data in any programming language
+-> in JS Variables are created using three keywords:
+1. let keyword
+Eg: let name= "Py";
+- Variables created using let keyword can be updated but cannot be recreated(reassigned)
+
+2. const keyword:
+Eg: const balance= 100
+- Variables using const keyword cannot be updated or recreated
+
+3. var keyword:
+Eg: var city = "Bangalore"
+- Variables using var keyword can be updated and recreated
+
+
+Logic programs:
+1. Write a program to find wheather a number is armstrong number or not
+(armstrong number is a number whose each digit raised to the number of digits sum=given number eg:153 )
+1 pow 3 + 5 pow 3+ 3 pow 3 = 1 + 125 + 27 = 153
+
+
+2. We are given an integer array, 
+(name of array is asteriods of size n representing asteriods in a row for each asteriod the 
+absolute value represents its size and the sign represents its direction + means right - means left )
+Each asteriod moves at the same speed. 
+condition 1 : if 2 asteroids meet the smaller one will explode
+condition 2: if both are of the same size both will explode
+condition 3: 2 asteroids moving in the same direction will never meet
+to find out the state of asteriods after all the collisons 
+
+
+rest and spread operator in js:
+rest operator
+-> this operator is used to destructure an array 
+-> destructuring of an array means dividing an array elements into its constituent parts
+-> this operator is always used on the left  hand side of the equal sign
+
+spread operator
+->this operator is used to construct an new array with the constituents of two exisiting arrays
+-> it is always written on the right hand side of the equal sign.
+
+Objects in js
+objects are variables which carry multiple properties represented in key:value pairs 
+we can access each prpty using . notation or square brackets
+eg:  
+
+Array destructuring:
+
+Object destructuring:
+
+
+-------------------------------------------------------------------------------------------------------------------------
+Document Object Model (DOM):
+---------------------------
+- DOM provides JS functions in order to interact with the html page.
+- It provides functions to :
+1. create a new element: document.createElement(tagName);
+2. select values from form inputs: document.getElementById("idName").value;
+3. capture html elements using idName: document.getElementById("idName");
+4. manipulate the content of html tags using innerHTML: document.getElementById("idName").innerHTML="New content";
+
+
+JSON :JS object notation
+-------------------------
+- It is used for data communication between the client and the server
+- JSON is the string representation of a JS object

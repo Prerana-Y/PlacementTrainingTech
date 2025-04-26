@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- find whether a number is a perfect number or not -->
+     <!-- when sum of all factors= twice the given number...it is called as perfect number -->
+      <script>
+        /*
+
+        */
+        let num=28;
+        let prevsum=0;
+        let sum=0;
+        for (let i=1;i<=num;i++){
+            if(num%i==0){
+                sum=  sum+i;
+                document.write(`${prevsum}+${i}=${sum}<br>`)
+            }
+        }
+        document.write(`Sum of factors of 28 is ${sum}.<br>`);
+        if(sum==(2*num)){
+            document.write("28 is a Perfect number.")
+        }
+      </script>
+</body>
+</html>

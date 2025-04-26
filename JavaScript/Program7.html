@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Array rendered as a list -->
+     <ol>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Orange</li>
+     </ol>
+     <ul id="names"></ul>
+     <script>
+        //given an array of names, render the names as a list on the html document
+        //run across the array, take each item and create a list element around it and append the list item to the document
+        let names = ["Sachin","Ponting","Virat","Dhoni","Ganguly","ABD","Sehwag"];
+        let nameList =document.getElementById("names");
+        names.map((name)=>{
+            let li= document.createElement("li");
+            li.innerHTML=name;  //inner html is the content inside closing and opening tag of html element
+            nameList.appendChild(li);
+        });
+     </script>
+</body>
+</html>

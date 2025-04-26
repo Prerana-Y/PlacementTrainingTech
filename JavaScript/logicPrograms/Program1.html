@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- given a number 4,convert it into binary -->
+     <!-- 0100 -->
+      <script>
+        let number=4;
+        let binary="";
+        while(number>0){
+            let rem=parseInt(number%2);
+            binary=rem+binary;
+            number=parseInt(number/2);
+        }
+        document.write(binary);
+        /*
+        let num=4;
+        var res=num.toString(2);
+        document.write(`${num} in binary is ${res}`);
+        
+        - take the number
+        - start dividing by 2
+        - until n>0
+        - take the remainder for each step and concatenate to the binary string
+        */
+      </script>
+</body>
+</html>
+
+

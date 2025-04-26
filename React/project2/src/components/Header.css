@@ -1,0 +1,17 @@
+html,
+body{
+    margin: 0;
+}
+.navbar{
+    display:flex;
+    background-color: navy;
+    color: white;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}

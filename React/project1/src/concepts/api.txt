@@ -1,0 +1,21 @@
+What is an API?
+- Application programming interface
+- 
+
+
+
+
+-controllers: run on urls called routes
+Eg: insertController ---> /insert
+get controller-->/getdata--- capture all data in the database
+
+API postmortel:
+- api method
+- api end point
+- post request, raise a request, to port:8000/insert, http://mydomain/insert, api end point(/insert)-------------insertController
+- raise a request, to port:8000/getdata, hettp://ipaddress:portnumber/getdata, hettp://mydomain/getdata
+
+rest API --->representational state transfer
+- used to update, delete,get, put data 
+
+soap api

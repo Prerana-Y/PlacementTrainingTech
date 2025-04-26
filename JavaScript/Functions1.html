@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //3 types of cuntion in JS
+        //named function
+        function myFunction(name){
+            document.write(`Hello ${name}!<br>`);
+        }
+
+        myFunction("Aishu");
+
+        //anonymous function
+        const annFunc = function(name){
+            document.write(`Hello ${name}!<br>`);
+        };
+
+        annFunc("Maaza");
+
+        //arrow function
+        let arrowFunc=(name)=>{
+            //function body
+            document.write(`Hello ${name}!<br>`);
+        };
+        arrowFunc("Billo");
+    </script>
+</body>
+</html>

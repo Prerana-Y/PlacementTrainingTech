@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array of fruits
+        let basket1 = ["mango", "apple", "banana","grapes"];
+        // console.log(basket{1});
+        let [f1, f2, f3, f4] = basket1;
+        console.log(f1);
+        console.log(f2);
+        console.log(f3);
+        console.log(f4);
+        let bigBasket = [
+            "mango",
+            "apple",
+            "banana",
+            "grapes",
+            "watermelon",
+            "muskmelon",
+            "kiwi",
+            "pineapple",
+        ];
+        let [fr1, fr2, fr3, fr4, ...fr5] = bigBasket;
+        console.log(fr1);
+        console.log(fr5);
+
+        let person = {
+            name:"Aishu",
+            age:21,
+            occupation:"Student",
+            place:"Bangalore",
+        };
+        document.write(person.name+"<br>");
+        document.write(person.age+"<br>");
+        for (let p in person) {
+            //for in loop to iterate through objects
+            document.write(`${p}=${person[p]}<br>`);
+        }
+    </script>
+</body>
+</html>

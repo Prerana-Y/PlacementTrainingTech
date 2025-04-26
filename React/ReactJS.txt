@@ -1,0 +1,18 @@
+- Entry point is App.jsx
+- file name start with capital
+- folder name start with small letter
+- jsx stands for javascript and xml
+- it is the extension used to denote that a js function returns an html element
+
+
+//the component which calls another function is called as parent component.
+//the function/component which is being called is the child component.
+//when data is passed from parent component to the child component it is called as props(properties)
+//props is an object of data passed from parent to child
+//props originates in the parent component but accessed in the child component
+
+//state in react js:
+//state is an object that is native to the current component
+//it originates in the specific componenet and is accessible in the same component 
+//in functional components, state is accessed using useState() which is prebuilt in react package
+//states are objects which can be updated over time

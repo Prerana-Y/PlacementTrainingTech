@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+     <style>
+        img{
+            height: 10rem;
+            width: 10rem;
+        }
+     </style>
+</head>
+<body>
+    <h1 class="display-3 text-center bg-success text-white p-3">My Store</h1>
+    <div id="product-list" class="container mt-4"></div>
+    <script>
+        let url="https://fakestoreapi.com/products";
+        //fetch from the given url
+        //on successful scenario convert the data into JSON and display on the output screen
+        //on failure scenario give an alert message that the fetch function didn't work
+        fetch(url)
+        .then((res)=>res.json())
+        .then((res)=>{
+            console.log(res);
+            displayProducts(res);
+        })
+        .catch((err)=>{
+            alert("Failed to fetch data from the URL.");
+            console.log(err);
+        });
+
+        function displayProducts(products){
+            const productList=document.getElementById("product-list"); 
+            products.map((product)=>{
+                const productItem= document.createElement("div");//div for each product item
+                //for each product item add a bs class called d flex
+                productItem.classList.add("d-flex");
+                productItem.classList.add("align-items-center");
+                const imageDiv=document.createElement("div");
+                const descriptionDiv=document.createElement("div");
+                imageDiv.classList.add("p-3");
+                descriptionDiv.classList.add("p-3");
+                const img=document.createElement("img");
+                img.src=product.image;
+                imageDiv.appendChild(img);
+                productItem.appendChild(imageDiv);
+                let title=document.createElement("h3");
+                title.textContent=product.title;
+                let pricepara=document.createElement("p");
+                pricepara.innerHTML=`Price:<span>&#8377;</span>${product.price}`;
+                let desc =document.createElement("p");
+                desc.innerText=product.description;
+                let category=document.createElement("p");
+                category.innerText=`Category: ${product.category}`;
+                let ratings=document.createElement("p");
+                ratings.innerHTML=`Reviews:${product.rating.rate} of ${product.rating.count}`;
+                descriptionDiv.appendChild(title);
+                descriptionDiv.appendChild(pricepara);
+                descriptionDiv.appendChild(desc);
+                descriptionDiv.appendChild(category);
+                descriptionDiv.appendChild(ratings);
+                productItem.appendChild(descriptionDiv);
+                productList.appendChild(productItem);
+            })
+        }
+    </script>
+</body>
+</html>

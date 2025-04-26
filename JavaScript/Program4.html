@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Spread Operator</h1>
+    <p>
+        The spread operator allows an iterable such as an array or string to be expanded in places where zero or more
+        arguments or elements are expected.
+    </p>
+    <script>
+        let b1=["Mango","Grapes","Apple"];
+        let b2=["Orange","Banana","Chikki"];
+        let b3=[b1,b2];
+        console.log(b1);
+        console.log(b2);
+        console.log(b3);
+        console.log(b3[0][0]);
+        //spread the values of b1 and b2 across indices of b3
+        b3=[...b1,...b2];
+        console.log(b3);
+    </script>
+</body>
+</html>

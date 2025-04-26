@@ -1,0 +1,15 @@
+.product-item{
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.img-div{
+    padding: 10px;
+}
+.img-div > img {
+    width: 10rem;
+}
+.dsec-div{
+    padding: 10px;
+    margin-left: 5rem;
+}

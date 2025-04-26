@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            /* element selector*/
+            color:aliceblue;
+            background-color: blue;
+        }
+        .div1{
+            /*class selector*/
+            background-color:rgb(4, 112, 112);
+            color:rgb(243, 235, 235) ;
+        }
+        #id1{
+            /*id selector*/
+            background-color: lightgreen;
+            color:green
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <div>I am styled using element selector.</div>
+    <div class="div1">I am styled using class name.</div>
+    <div id="id1">I am styled using ID name.</div>
+    <div class="div1" id="id1">I am styled using ID and class name.</div>
+    <!-- Css priorities : id>class>element>universal selector -->
+</body>
+</html>
