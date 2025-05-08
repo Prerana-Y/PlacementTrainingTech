@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Note Keeper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Note Keeper</h1>
+    <div class="note-wrapper">
+      <div class="note-form">
+        <h2>Add New Note</h2>
+        <p>Title</p>
+        <input type="text" id="title" placeholder="Title">
+        <p>Content</p>
+        <textarea id="content" placeholder="Enter content..."></textarea>
+        <button onclick="addNote()">Add Note</button>
+      </div>
+      <div class="note-display">
+        <p class="empty-message" id="empty-message">No notes yet. Add your first note!</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

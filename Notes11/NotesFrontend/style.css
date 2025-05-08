@@ -1,0 +1,99 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f1e2e;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container */
+  .container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Title */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Layout */
+  .note-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Form section */
+  .note-form {
+    background-color: #1e3a5f;
+    padding: 20px;
+    flex: 1;
+    border-radius: 8px;
+  }
+  
+  .note-form h2 {
+    margin-bottom: 10px;
+  }
+  
+  .note-form input,
+  .note-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #102b46;
+    color: white;
+  }
+  
+  .note-form textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .note-form button {
+    padding: 10px 20px;
+    background-color: #00bfff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .note-form button:hover {
+    background-color: #009acd;
+  }
+  
+  /* Notes display */
+  .note-display {
+    background-color: #1e3a5f;
+    padding: 20px;
+    flex: 1;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    text-align: center;
+  }
+  
+  .empty-message {
+    color: #cccccc;
+    font-size: 16px;
+    font-weight: normal;
+    margin-top: 10px;
+  }
+  /* Notes list (if you implement it later) */
+  .note-item {
+    text-align: left;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #29486d;
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
