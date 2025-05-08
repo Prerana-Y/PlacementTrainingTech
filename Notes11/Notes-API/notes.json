@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "id": "1746689109944",
+    "title": "note1",
+    "content": "hbd",
+    "createdAt": "2025-05-08T07:25:09.944Z",
+    "updatedAt": "2025-05-08T07:25:09.944Z"
+  },
+  {
+    "id": "1746682722012",
+    "title": "Note3",
+    "content": "Hieeee!!",
+    "createdAt": "2025-05-08T05:38:42.012Z",
+    "updatedAt": "2025-05-08T05:38:42.012Z"
+  },
+  {
+    "id": "1746682712492",
+    "title": "Note2",
+    "content": "Hellooo!!",
+    "createdAt": "2025-05-08T05:38:32.492Z",
+    "updatedAt": "2025-05-08T05:38:32.492Z"
+  }
+]

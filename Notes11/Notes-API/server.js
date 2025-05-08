@@ -9,11 +9,11 @@ require('dotenv').config();
 
 app.use(express.json());
 
-// app.use(cor({
-//     origin:'',
-//     methods: ['GET','POST','PUT','DELETE'],
-//     allowedHeaders:['Content-Type']
-// }));
+app.use(cors({
+    origin:'http://127.0.0.1:5500',
+    methods: ['GET','POST','PUT','DELETE'],
+    allowedHeaders:['Content-Type']
+}));
 
 const DATA_FILE=path.join(__dirname,'notes.json');
 
